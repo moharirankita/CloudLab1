@@ -1,0 +1,19 @@
+name: PR_check_master
+
+on: 
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+
+      - name: Print Coursename
+
+        env:
+          COURSE_NAME: CSYE6225
+
+        run: echo $COURSE_NAME
